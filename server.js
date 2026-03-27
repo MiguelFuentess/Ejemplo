@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Simulamos una base de datos con un pequeño retraso (latencia)
+// Simulamos una base de datos con retraso
 app.post('/api/recompensas', (req, res) => {
-    const delay = Math.random() * 1000; // Retraso aleatorio hasta 1 seg
+    const delay = Math.random() * 1000; // Retraso aleatorio 1 seg
     setTimeout(() => {
-        // Simulamos que el 10% de las peticiones fallan por saturación
+        //  10% de las peticiones fallan 
         if (Math.random() > 0.9) {
             return res.status(500).send("Error: Base de datos saturada");
         }
