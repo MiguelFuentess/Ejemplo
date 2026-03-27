@@ -17,3 +17,8 @@ app.post('/api/recompensas', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor de Helldivers 2 corriendo en http://localhost:${PORT}`);
 });
+
+//otro comentario
+//adfdsfa
+// fdsfasdf
+//gfgaasdfadf
